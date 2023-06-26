@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영수증</title>
+    <style>
+        * {
+            box-sizing:border-box;
+            margin:0; padding:0;
+            border-collapse:collapse;
+            font-style:normal;
+            text-align:left; font-weight:normal;
+        }
+        table,tr,td,th {
+            border:1px solid #aaa;
+            padding:5px;
+        }
+        table {border:2px solid #000; width:500px; margin:50px auto;}
+        table thead th {text-align:right; background:#eee; font-weight:600;}
+        table thead th:first-child {text-align:left;}
+        table em {font-weight:600;}
+        table tbody td {text-align:right; padding-top:15px; padding-bottom:15px;}
+        table tfoot th {background:#eee; font-weight:600;}
+        table tfoot td {text-align: right;font-weight:600;}
+    </style>
+</head>
+<body>
+    <table id="pay"> 
+        <thead>
+            <tr>
+                <th>상품(코드)</th>
+                <th>단가</th>
+                <th>수량</th>
+                <th>금액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>001 <em>굿모닝우유 900ML</em></th>
+                <td>1,350</td>
+                <td>1</td>
+                <td>1,350</td>
+            </tr>
+            <tr>
+                <th>002 <em>양파</em></th>
+                <td>3,300</td>
+                <td>2</td>
+                <td>6,600</td>
+            </tr>
+            <tr>
+                <th>003 <em>무</em></th>
+                <td>500</td>
+                <td>3</td>
+                <td>1,500</td>
+            </tr>
+            <tr>
+                <th>004 <em>깻잎</em></th>
+                <td>750</td>
+                <td>1</td>
+                <td>750</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">판매총액:</th>
+                <td>10,200</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
